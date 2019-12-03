@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1044</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1044</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1044</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>481</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;W celu wyszkolenia własnego klasyfikatora, w pierwszej kolejności należy&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;zainstalować bibliotekę OpenCV. Możesz ją znaleźć na stronie:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;https://opencv.org/releases.html&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>KROK 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>KROK 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>441</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Po zainstalowaniu biblioteki OpenCV należy znaleźć &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;aplikację narzędziową opencv_create_samples.exe&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;oraz opencv_train_cascade.exe.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Domyślnie powinna się ona znajdować w następującej ścieżce:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;opencv/build/x64/vc14/bin.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>350</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>KROK 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>511</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Pierwsza aplikacja narzędziowa: opencv_createsamples.exe służy do &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;stworzenia pliku wektorowego obrazów pozytywnych.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Obrazy pozytywne to obrazy na których znajduje się obiekt, &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;którego szukamy. Stwórz na swoim komputerze folder i włóż do Niego&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wszystkie obrazy przedstawiające interesujący Cię obiekt.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Jeżeli jesteś gotowy kliknij &amp;quot;Próbki pozytywne&amp;quot; - tam &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;zostaniesz poproszony o znalezienie pliku opencv_createsamples.exe, &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;wybór rozdzielczości twoich obrazów oraz znalezienie folderu&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;z wybranymi przez Ciebie obrazami. Po wszystkim&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;możesz uruchomić aplikację za pomocą przycisku &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&amp;quot;Utwórz&amp;quot; lub dobrać rozszerzone parametry.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>40</y>
+     <width>481</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Druga aplikacja narzędziowa to train cascade.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Umożliwia ona stworzenie pliku obrazów negatywnych, &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;czyli takich na których NIE jest widoczny szukany element. &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Stwórz folder obrazów negatywnych.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Znajdź aplikację train_cascade na swoim komputerze, następnie  &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;zmień rozdzielczość swoich zdjęć oraz wgraj obrazy. &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Kolejne okno włączy się automatycznie.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>710</y>
+     <width>431</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Następnie pojawić powinno się okno Command Window.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Widoczny w Nim komunikat 'Done. Created X samples&amp;quot; &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;oznacza, że wszystko poszło zgodnie z planem.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>270</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>KROK 5</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>290</y>
+     <width>481</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Wgraj stworzony plik positive.vec oraz negative.txt. &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Następnie rozpocznij trening kaskady lub dobierz rozszerzone parametry.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Wtedy włączy się okno wiersza poleceń i rozpocznie&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;się tworzenie kaskady. Komunikat: &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;'Required leaf false alarm rate achieved. Branch training terminated'&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;oznacza, że szkolenie kaskady się powiodło.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>KROK 4</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
